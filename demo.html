@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamische Data Challenge</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <h1>Al onze werknemers</h1>
+    <div class="tableContainer">
+
+    </div>
+    <script src="./UserGenerator/User.js"></script>
+    <script src="./data/data.js"></script>
+    <script src="./logic/logic.js"></script>
+
+    <script>
+        // maakt de Users array aan zodat we deze later kunnen gebruiken
+        let Users = [];
+
+        UserData.forEach((item) => {
+
+            // hier begint jou eigen filter systeem voor elke opdracht
+            Users.push(item);
+        })
+
+        GenerateTable(Users);
+
+    </script>
+</body>
+</html>
